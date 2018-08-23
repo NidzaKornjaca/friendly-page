@@ -6,25 +6,48 @@
     min-height: 100vh;
 }
 
-.parallax-city   {
-    background-image: url("ernest-karchmit-786781-unsplash.jpg");
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 .circular {
     border-radius: 50%;
 }
 
+.bg-1 {
+    background-image: repeating-linear-gradient(
+        #343a40,
+        #343a40 40px,
+        #e2fd9f 40px,
+        #e2fd9f 41px
+    );
+}
+
+.text-accent {
+    color: #e2fd9f !important;
+}
+
+.text-accent-2 {
+    color: #f1fadb !important;
+}
+
+.bg-2 {
+    background-color: #e2fd9f;
+}
+
 .bg-stripes {
-    background-image: repeating-linear-gradient( 
+    background-image: repeating-linear-gradient(
         45deg,
-        #606dbc,
-        #606dbc 10px,
-        #465298 10px,
-        #465298 20px
+        #343a40,
+        #343a40 5px,
+        #e2fd9f 5px,
+        #e2fd9f 60px
+    );
+}
+
+.bg-stripes-inverse {
+    background-image: repeating-linear-gradient(
+        -45deg,
+        #343a40,
+        #343a40 5px,
+        #e2fd9f 5px,
+        #e2fd9f 60px
     );
 }
 

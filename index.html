@@ -6,8 +6,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
@@ -18,12 +17,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="static/animations.css">
 </head>
 
 <body data-spy="scroll" data-offset="100" data-target="#navbarSpied">
+
+    <!-- NAV -->
+
     <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark" id="navbarSpied">
         <div class="container">
-            <a class="navbar-brand" href="#">Friendly</a>
+            <a class="navbar-brand" href="#top">Friendly</a>
             <div id="navbarCollapse" class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
@@ -35,8 +38,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#kontakt">Kontakt</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blog</a>
+                    <li class="nav-item ml-auto">
+                        <a class="nav-link text-warning" href="#blog">Blog</a>
                     </li>
                 </ul>
             </div>
@@ -46,12 +49,17 @@
             </button>
         </div>
     </nav>
+
+    <!-- Main section -->
+
     <main class="container-fluid">
-        <div class="row align-items-center justify-content-center superbig parallax-city">
+        <!-- Top -->
+
+        <div id="top" class="row align-items-center justify-content-center superbig parallax-city">
             <div class="col">
                 <div class="row align-items-start justify-content-center">
                     <div class="col col-12 col-md-4 align-self-center">
-                        <div class="card bg-dark text-center text-light">
+                        <div class="card bg-dark text-center text-light pop_up">
                             <div class="card-body">
                                 <h1 class="display-3">Friendly</h1>
                                 <p class="lead">Natalija Raičević, marketing stručnjak</p>
@@ -61,7 +69,10 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center pt-5 pb-5" id="mi">
+
+        <!-- Ko smo mi -->
+        <div class="row bg-stripes py-2"></div>
+        <div class="row section justify-content-center pt-5 pb-5" id="mi">
             <div class="col col-12 col-md-8 col-xl-6">
                 <h1 class="display-4">
                     <span style="color: #000000;">Ko smo mi?</span>
@@ -82,15 +93,16 @@
                 </p>
             </div>
         </div>
-        <div class="row parallax-city py-5"></div>
-        <div class="row bg-stripes py-2"></div>
+
+        <!-- Natalija -->
+
         <div class="row justify-content-center pt-5 pb-5 bg-dark">
-            <div class="col col-12 col-md-3">
+            <div class="col col-12 col-md-3 section">
                 <img src="static/rucksack-magazine-386319.jpg"
                     class="img-fluid rounded">
             </div>
             <div class="col col-12 col-md-3">
-                <div class="card bg-light text-left text-dark">
+                <div class="card bg-light text-left text-dark section">
                     <div class="card-body">
                         <h1 class="display-4">Natalija Raičević</h1>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
@@ -107,8 +119,17 @@
                 </div>
             </div>
         </div>
+        <div class="row bg-stripes py-2"></div>
+
+        <!-- Break -->
+
+        <div class="row parallax-city py-5"></div>
+        <div class="row bg-stripes py-2"></div>
+
+        <!-- Klijenti -->
+
         <div class="row justify-content-center pt-5 pb-5" id="klijenti">
-            <div class="col col-12 col-md-8 col-xl-6">
+            <div class="col col-12 col-md-8 col-xl-6 section">
                 <h1 class="display-4">Iskustvo</h1>
                 <p>Brojni zadovoljni klijenti
                     <span style="color: #000000;">In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
@@ -152,9 +173,15 @@
                 </div>
             </div>
         </div>
+
+        <!-- Stripes -->
+
         <div class="row bg-stripes py-2"></div>
+
+        <!-- Kontakt -->
+
         <div class="row align-items-center justify-content-center pt-5 pb-4 parallax-city superbig" id="kontakt">
-            <div class="col col-10 col-md-6">
+            <div class="col col-10 col-md-6 section">
                 <div style="background-color: rgba(0, 0, 0, 0.8);" class="jumbotron">
                     <div class="row">
                         <div class="col">
@@ -192,6 +219,9 @@
             </div>
         </div>
     </main>
+
+    <!-- Footer -->
+
     <div class="container footer">
         <footer class="pt-2">
             <div class="row">
@@ -204,5 +234,7 @@
             </div>
         </footer>
     </div>
+    <script src="static/smoothscroll.js"></script>
+    <script src="static/jquery.viewportchecker.min.js"></script>
 </body>
 </html>

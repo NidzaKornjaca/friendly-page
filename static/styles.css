@@ -2,14 +2,6 @@
     padding: 0 0 0 0;
 }
 
-.parallax-bus {
-    background-image: url("lachlan-gowen-unsplash.jpg");
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 .superbig {
     min-height: 100vh;
 }
@@ -34,4 +26,12 @@
         #465298 10px,
         #465298 20px
     );
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
 }

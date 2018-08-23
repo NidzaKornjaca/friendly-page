@@ -1,0 +1,39 @@
+.nopadding {
+    padding: 0 0 0 0;
+}
+
+.parallax-bus {
+    background-image: url("lachlan-gowen-unsplash.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.superbig {
+    min-height: 100vh;
+}
+
+.parallax-city   {
+    background-image: url("ernest-karchmit-786781-unsplash.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.circular {
+    border-radius: 50%;
+}
+
+.bg-stripes {
+    background-image: repeating-linear-gradient( 
+        45deg,
+        #606dbc,
+        #606dbc 10px,
+        #465298 10px,
+        #465298 20px
+    );
+}
